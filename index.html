@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Raina-Portfolio</title>
+    <title>Raina Shin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -21,11 +21,12 @@
 
     
     <header role="banner" id='home' >
-        <img src='headline-img/3.jpg' alt='header-img' class='header-img' style='width:100%'>
-        <div class='headline-text'>
-            <h1>Hello, I'm Raina!</h1> </br>
-            <p>I like solving problems</p>
-            <p id='p2'><br>using <span>code</span> and <span>design</span>.</p> 
+        <div class='hero-image'>
+            <div class='headline-text'>
+                <h1>Hello, I'm Raina!</h1> </br>
+                <p>I like solving problems</p>
+                <p id='p2'><br>using <span>code</span> and <span>design</span>.</p> 
+            </div>
         </div>   
     </header>
        
@@ -40,43 +41,55 @@
             When I’m not solving problems, I enjoy a coffee moment at a local coffee shop, walking with my big dog, and making a knitted scarf for friends and family.</h3>
         </section>
 
+
         <section class='portfolio' id='portfolio'>
-                <div class='flexbox-container'>
-                    <h2>Portfolio</h2>
+            <h2>PORTFOLIO</h2>
+
+            <div class='flexbox-container'>
+                <div class='card'>
                     <div class='project 1'>
+                        <img src="images/QuizApp.png" alt ='quizApp-img' class='portfolio quiz-app'>
                         <h3 class='quiz-app'>Quiz App</h3>
-                        <img src="images/QuizApp.png" alt ='quizApp-img' id='quiz-app'>
+                        <div class='logos'>
+                            <img src="images/HTML5.png" alt='html-logo'/>
+                            <img src='images/css-5.svg' alt='css=logo'/>
+                            <img src='images/jquery.png' alt='jquery-logo'>
+                            <img src='images/javascript-logo-black-and-white.png' alt='js-logo'/>
+                        </div>
+                        <br>
                         <p class='description'>A Quiz app to test your knowledge about Old MacDonald.</p>
-                        <div class='logos'>
-                            <img src="images/HTML5_Logo_512.png" alt='html-logo'/>
-                            <img src='images/css-5.svg' alt='css=logo'/>
-                            <img src='images/javascript.svg' alt='js-logo'/>
-                            <img src='images/jquery.svg' alt='jquery-logo'>
-                        </div>
-
+                        
                         <div class='project-sites'>
-                            <button type='click'><a href="https://github.com/yewon9524/quiz-app" target="_blank">View Code</a></button>
-                            <button type='click'><a href="https://yewon9524.github.io/quiz-app/" target="_blank">Live Site</a></button>
-                        </div>
-                    </div>
-
-                    <div class='project 2'>
-                        <h3 class='bookmark-app'>Bookmarks App</h3>
-                        <img src="images/BookmarksApp.png" alt ='bookmarkApp-img' id='bookmark-app'>
-                        <p class='description'>A bookmarking application to store and rate custom web bookmark.</p>
-                        <div class='logos'>
-                            <img src="images/HTML5_Logo_512.png" alt='html-logo'/>
-                            <img src='images/css-5.svg' alt='css=logo'/>
-                            <img src='images/javascript.svg' alt='js-logo'/>
-                            <img src='images/jquery.svg' alt='jquery-logo'>
-                        </div>
-
-                        <div class='project-sites'>
-                            <button type='click'><a href="https://github.com/yewon9524/bookmarks-app" target="_blank">View Code</a></button>
-                            <button type='click'><a href="https://yewon9524.github.io/bookmarks-app/" target="_blank">Live Site</a></button>
+                            <button type='button' class='repo'><a href="https://github.com/yewon9524/quiz-app" target="_blank">CODE</a></button> |
+                            <button type='button' class='demo'><a href="https://yewon9524.github.io/quiz-app/" target="_blank">LIVE</a></button>
                         </div>
                     </div>
                 </div>
+
+
+                <div class='card'>
+                    <div class='project 2'>
+                        <video autoplay muted loop id="myVideo">
+                            <source src="bookmark.webm" type="video/webm">
+                          </video>
+                        <h3 class='bookmark-app'>Bookmarks App</h3>
+                        <div class='logos'>
+                            <img src="images/HTML5.png" alt='html-logo'/>
+                            <img src='images/css-5.svg' alt='css=logo'/>
+                            <img src='images/jquery.png' alt='jquery-logo'>
+                            <img src='images/javascript-logo-black-and-white.png' alt='js-logo'/>
+                        </div>
+                    </br>
+                        <p class='description'>A bookmarking application to store and rate custom web bookmark.</p>
+                        
+
+                        <div class='project-sites'>
+                            <button type='button' class='repo'><a href="https://github.com/yewon9524/bookmarks-app" target="_blank">CODE</a></button> |
+                            <button type='button' class='demo'><a href="https://yewon9524.github.io/bookmarks-app/" target="_blank">LIVE</a></button>
+                        </div>
+                    </div>
+               </div> 
+            </div>
         </section>
 
         <section class='contact' id='contact'>
