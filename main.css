@@ -6,7 +6,7 @@
   
   body {
     font-size: 20px;
-    color: rgb(59, 53, 53);
+    /* color: rgb(59, 53, 53); */
     text-align: center;
     line-height: 2;
     margin: 0;
@@ -18,18 +18,20 @@
     right: 0;
     margin: 0;
     z-index: 2;
-    background-color: rgb(172, 164, 164);
+    background-color: rgb(189, 179, 179);
   }
 
   div.nav a {
     float: right;
-    padding: 14px 16px;
-    background-color: rgb(172, 164, 164);
-    color: #000000;
+    padding: 8px 16px;
+    background-color: rgb(189, 179, 179);
+    color: rgb(59, 53, 53);
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   div.nav a.homeNav {
@@ -38,12 +40,12 @@
 
 
   div.nav a:hover {
-    background-color: rgb(112, 165, 165);
+    background-color: #ECE6DE;
     color: rgb(0, 0, 0);
   }
 
   .hero-image {
-    background-image: url('headline-img/3.jpg');
+    background-image: url('headline-img/yay.jpg');
     background-color: #cccccc;
     height: 100vh;
     background-position: center;
@@ -53,8 +55,9 @@
   }
  
   .headline-text h1 {
+    color: rgb(59, 53, 53);
     text-transform: uppercase;
-    letter-spacing: 3.5px;
+    letter-spacing: 3.25px;
     width: 100%;
     position: absolute;
     text-align: center;
@@ -65,12 +68,13 @@
   }
 
   .headline-text p {
+    color: dimgrey;
     width: 100%;
     position: absolute;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     top: 45%;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.75;
     padding-right:4%;
     padding-left: 4%;
@@ -83,36 +87,67 @@
   /****************** sections *********************/
   
   /****************** aboutMe pagee ****************/
+
+  .aboutMe-img {
+    background-image: url('headline-img/yay-peach.jpg');
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
   #aboutMe {
     min-height: 100vh;
-    background-color: lavender;
-    padding: 0 5% 0 5%;
+    background-color: #D4E0DC;
+    
+    color: dimgray;
   }
   #aboutMe h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 0px;
     padding-top: 10vh;
     letter-spacing: 3px;
-  }
-  #aboutMe p {
-    margin-top: 0;
-    font-size: 16px;
+    margin-bottom: 0;
   }
 
-  /**************** portfolio pagee ****************/
-  #portfolio {
-    min-height: 100vh;
-    background-color: white;
-    padding: 0 5% 0 5%;
+  #aboutMe h3 {
+    letter-spacing: 1.5px;
+    font-size: 14px;
+  }
+
+  #aboutMe p span {
+    color: black;
+  }
+
+  #aboutMe p {
+    padding: 0 10% 0 10%;
+    font-size: 12px;
     text-align: left;
   }
 
+  #aboutMe p.personal {
+    text-align: right;
+  }
+
+  /**************** portfolio pagee ****************/
+  
+  #portfolio {
+    min-height: 100vh;
+    background-color: white;
+    padding: 0 7% 0 7%;
+    text-align: left;
+    color: dimgray;
+  }
+
   #portfolio h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 0px;
     padding-top: 10vh;
-    letter-spacing: 3px;
+    letter-spacing: 3.5px;
     text-align: center;
+    margin-bottom: 10%;
   }
 
   .flexbox-container {
@@ -122,15 +157,15 @@
   }
   
   div.project {
-    border: 3px solid #ccc;
-    margin: 0 5% 10% 5%;
+    border: 1px solid #ccc;
+    margin: 0 5% 15% 5%;
   }
 
   div.project:hover {
-    border: 2px solid grey;
+    border: 1px solid dimgrey;
   }  
  
-  #myVideo {
+  .myVideo {
     
     right: 0;
     bottom: 0;
@@ -148,23 +183,23 @@
   } 
 
   div.project h3 {
-    font-size: 20px;
+    font-size: 16px;
     padding: 0 5% 5% 5%;
     letter-spacing: 1px;
+    display: inline;
+    font-weight: bold;
+  }
   
+
+  p.tech {
+    display: inline;
+    font-size: 10px;
+    color: dimgrey;
   }
 
-  .logos img{
-    max-width: 1em;
-    max-height: 1em;
-    filter: grayscale(100%);
-    float: right;
-    margin: .5%;
-  }
-
-  div.project p {
+  div.project p.description {
     padding: 0 5% 0 5%;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
     text-align: left;
   }
@@ -175,7 +210,7 @@
   }
 
   .project-sites button {
-    border: 2px solid grey;
+    border: 1px solid #ccc;
     background-color: transparent;
     cursor: pointer;
     padding: 1px 5px;
@@ -184,7 +219,25 @@
     margin: 15px 0;
     }
 
+  .project-sites button.repo:hover {
+    border: 1px solid #CCC;
+    background-color: #F2CCC8;
+    color: white;
+  }
+
+  .project-sites button.demo:hover {
+    border: 1px solid #CCC;
+    background-color: #D4E0DC;
+  }
+
   .project-sites a {
+    text-decoration: none;
+    color: rgb(73, 69, 69);
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .project-sites a:hover {
     text-decoration: none;
   }
 
@@ -192,20 +245,315 @@
 
   /******************** contact ********************/
 
-  /* footer img {
-      max-width: 28px;
-      margin: 10px;
-      height: 28px;
-  } */
+  #contact {
+    background-color: white;
+    padding: 0 5% 0 5%;
+    color: dimgray;
+  }
+  #contact h2 {
+    font-size: 28px;
+    margin-top: 0px;
+    padding-top: 10vh;
+    letter-spacing: 3px;
+  }
+
+  .contact p {
+    padding: 0 5% 0 5%;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+  
+  .contact i.fa {
+      margin: 20px;
+      padding: 20px;
+      color: dimgrey;
+      font-size: 30px;
+    }
 
   footer p {
-    font-size: 14px;
+    color: dimgray;
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 
-  /* @media screen and (min-device-width : 768px) and (max-device-width : 1025px) {
+  /*************** ipad screen size ****************/
+  @media screen and (min-device-width : 760px) and (max-device-width : 1023px) {
+    div.nav a {
+      padding: 8px 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+  
+    div.nav a.homeNav {
+      float: left;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .headline-text h1 {
+      letter-spacing: 4px;
+      font-size: 40px;
+      
+    }
+  
+    .headline-text p {
+      letter-spacing: 2.5px;
+      top: 45%;
+      font-size: 18px;
+      line-height: 2;
+      padding-right:5%;
+      padding-left: 5%;
+    }
+    .headline-text p span {
+      font-weight: bold;
+    }
+  
+  
+    /********************** sections ***********************/
     
+    /****************** aboutMe pagee ****************/
+    #aboutMe h2 {
+      font-size: 32px;
+      margin-top: 0px;
+      padding-top: 10vh;
+      letter-spacing: 4px;
+    }
+  
+    #aboutMe h3 {
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      margin-top: 5vh;
+      margin-bottom: 7vh;
+    }
+    #aboutMe p {
+      text-align: left;
+      padding: 0 20% 0 20%;
+      font-size: 14px;
+      line-height: 2;
+    } 
+
+    
+  
+    /**************** portfolio pagee ****************/
+    
+    #portfolio {
+      min-height: auto;
+      background-color: transparent;
+      padding: 0 5% 0 5%;
+      text-align: left;
+      color: dimgray;
+    }
+  
+    #portfolio h2 {
+      font-size: 32px;
+      margin-top: 0px;
+      padding-top: 10vh;
+      letter-spacing: 4px;
+      text-align: center;
+      margin-bottom: 10%;
+    }
+
+    div.card {
+      padding: 0 1% 10% 1%;
+    }
+    .flexbox-container {
+      flex-direction: row;
+    }
+
+    div.project h3, div.project .logos {
+      display: block;
+    } 
+  
+    div.project h3 {
+      font-size: 24px;
+      padding: 0 5% 0 5%;
+      letter-spacing: 1.5px;
+      margin:0;
+      display: block;
+    }
+  
+    p.tech {
+      display: inline;
+      font-size: 12px;
+      color: dimgrey;
+      padding: 0 5% 0 5%
+    }
+  
+    div.project p.description {
+      padding: 0 5% 0 5%;
+      font-size: 14px;
+      margin: 0;
+      text-align: left;
+    }
+  
+    .project-sites button {
+      padding: 5px 10px;
+      height: 30px;
+      width: 80px;
+      margin: 10% 0;
+      }
+  
+    /******************** contact ********************/
+    #contact h2 {
+      font-size: 32px;
+      margin-top: 0px;
+      padding-top: 10vh;
+      letter-spacing: 4px;
+    }
+  
+    .contact p {
+      letter-spacing: 2px;
+      font-size: 14px;
+    }
+    
+    .contact i.fa {
+        margin: 28px;
+        padding: 28px;
+        color: dimgrey;
+        font-size: 36px;
+      }
+  
+    footer p {
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+  
   }
 
-  @media screen and (min-device-width : 1026px) {
+  @media screen and (min-device-width : 1024px) {
+    div.nav a {
+      padding: 8px 18px;
+      letter-spacing: 1.5px;
+    }
+  
+    div.nav a.homeNav {
+      letter-spacing: 1.5px;
+    }
+    .headline-text h1 {
+      letter-spacing: 5px;
+      font-size: 40px;
+      
+    }
+  
+    .headline-text p {
+      letter-spacing: 3px;
+      top: 50%;
+      font-size: 18px;
+      line-height: 1.75;
+      padding-right:5%;
+      padding-left: 5%;
+    }
+    .headline-text p span {
+      font-weight: bold;
+    } 
+    /****************** aboutMe pagee ****************/
+    #aboutMe {
+      height: auto;
+    }
+    #aboutMe h2 {
+      font-size: 32px;
+      margin-top: 0px;
+      padding-top: 10vh;
+      letter-spacing: 4px;
+      margin-bottom: 1%;
+    }
+  
+    #aboutMe h3 {
+      letter-spacing: 1.5px;
+      margin: 0 0 3% 0;
+      font-size: 18px;
+    }
+    #aboutMe p {
+      padding: 0 25% 0 25%;
+      font-size: 14px;
+      line-height: 1.75;
+      text-align: left;
+      /* letter-spacing: 1px; */
+    }
+
+    #aboutMe span {
+      font-size: 15px;
+    }
     
-  } */
+    /**************** portfolio pagee ****************/
+    
+    #portfolio {
+      height: auto;
+      padding: 0 5% 0 5%;
+      color: dimgray;
+    }
+  
+    #portfolio h2 {
+      font-size: 32px;
+      margin-top: 0px;
+      padding-top: 10vh;
+      letter-spacing: 4px;
+      margin-bottom: 2%;
+    }
+  
+    .flexbox-container {
+      flex-direction: row;
+    }
+
+    div.card {
+      margin: 0 8%;
+    }
+    div.project h3, div.project .logos {
+      display: block;
+    } 
+  
+    div.project h3 {
+      font-size: 18px;
+      padding: 0 5% 0 5%;
+      letter-spacing: 1.5px;
+      margin:0;
+      display: block;
+    }
+  
+    p.tech {
+      display: inline;
+      font-size: 12px;
+      color: dimgrey;
+      padding: 0 5% 0 5%
+    }
+  
+    div.project p.description {
+      padding: 0 5% 0 5%;
+      font-size: 14px;
+      margin: 0;
+      text-align: left;
+    }
+  
+    .project-sites button {
+      padding: 0px;
+      height: 30px;
+      width: 80px;
+      margin: 3% 0;
+      }
+  
+    /******************** contact ********************/
+    #contact h2 {
+      font-size: 32px;
+      margin-top: 0px;
+      padding-top: 10vh;
+      letter-spacing: 4px;
+    }
+  
+    .contact p {
+      letter-spacing: 2px;
+      font-size: 14px;
+    }
+    
+    .contact i.fa {
+        margin: 0 28px 28px 28px;
+        padding: 24px;
+        color: dimgrey;
+        font-size: 32px;
+      }
+  
+    footer p {
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+  
+  }

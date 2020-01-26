@@ -14,8 +14,9 @@
         <div class='nav'>
             <a href='#home' class='homeNav'>Home</a>
             <a href="#contact">Contact</a>
+            <a href="#aboutMe">About</a> 
             <a href="#portfolio">Portfolio</a>
-            <a href="#aboutMe">About Me</a> 
+            
         </div>
     </nav>
 
@@ -33,29 +34,17 @@
 
     <main role="main">
 
-        <section class='aboutMe' id='aboutMe'>
-            <h2>ABOUT ME</h2>
-            <h3><em>I’m a full-stack Web Developer</em></h3>
-            <p>I am from a construction engineering background. The project all began from it just being a plan on a piece of paper and at the end, looking at these plans come to reality was very exciting. Then I learned about coding and it felt like magic. I love coding because it lets me create new things out of my imagination.
-            <br></br>
-            When I’m not solving problems, I enjoy a coffee moment at a local coffee shop, walking with my big dog, and making a knitted scarf for friends and family.</h3>
-        </section>
-
-
         <section class='portfolio' id='portfolio'>
             <h2>PORTFOLIO</h2>
 
             <div class='flexbox-container'>
                 <div class='card'>
                     <div class='project 1'>
-                        <img src="images/QuizApp.png" alt ='quizApp-img' class='portfolio quiz-app'>
-                        <h3 class='quiz-app'>Quiz App</h3>
-                        <div class='logos'>
-                            <img src="images/HTML5.png" alt='html-logo'/>
-                            <img src='images/css-5.svg' alt='css=logo'/>
-                            <img src='images/jquery.png' alt='jquery-logo'>
-                            <img src='images/javascript-logo-black-and-white.png' alt='js-logo'/>
-                        </div>
+                        <!-- video size: 960 x 720 -->
+                        <video muted loop class="myVideo">  
+                            <source src="videos/quizapp.webm" type="video/webm">
+                          </video>
+                        <h3 class='quiz-app'>Quiz App</h3><p class='tech'>HTML5 &nbsp;CSS3 &nbsp;  JS &nbsp;  jQuery</p>
                         <br>
                         <p class='description'>A Quiz app to test your knowledge about Old MacDonald.</p>
                         
@@ -69,16 +58,15 @@
 
                 <div class='card'>
                     <div class='project 2'>
-                        <video autoplay muted loop id="myVideo">
-                            <source src="bookmark.webm" type="video/webm">
+                        <video muted loop class="myVideo">
+                            <source src="videos/bookmark.webm" type="video/webm">
                           </video>
-                        <h3 class='bookmark-app'>Bookmarks App</h3>
-                        <div class='logos'>
-                            <img src="images/HTML5.png" alt='html-logo'/>
-                            <img src='images/css-5.svg' alt='css=logo'/>
+                        <h3 class='bookmark-app'>Bookmarks App</h3><p class='tech'>HTML5 &nbsp;CSS3 &nbsp;  JS &nbsp;  jQuery</p>
+                
+                            <!-- <img src="images/HTML5.png" alt='html-logo'/>
+                            <img src='images/css3.png' alt='css=logo'/>
                             <img src='images/jquery.png' alt='jquery-logo'>
-                            <img src='images/javascript-logo-black-and-white.png' alt='js-logo'/>
-                        </div>
+                            <img src='images/javascript-logo-black-and-white.png' alt='js-logo'/> -->
                     </br>
                         <p class='description'>A bookmarking application to store and rate custom web bookmark.</p>
                         
@@ -92,14 +80,32 @@
             </div>
         </section>
 
+        <section class='aboutMe' id='aboutMe'>
+            <div class='aboutMe-img'> 
+                <h2>ABOUT ME</h2>
+                <h3><em>I’m a Full-Stack Web Developer</em></h3>
+                <p>There are two things I have loved as a little kid: <span class='bold'> Arts</span> and <span class='bold'>Math</span>.
+                Math equations were rewarding because there always was and will be an <span>answer</span> despite its difficulty. 
+                    In contrast, Arts allowed me to tangibly <span>express</span> my <span>thoughts and imaginations.</span></p>
+                <p>As a Web Developer, I could do the <em>two things I loved at the same time.</em> 
+                    
+                <p>To me, coding is not difficult, but rather, <span>challenging</span> because if I put in the time and efforts, I will see the  result. 
+                    Every project and experience I encounter build me up to be a stronger developer ready to take on new challenges. I firmly believe that the skills, ideas, and creativity I have will <span>spark a large impact</span> on those around me.    </p>
+
+                <p><em>When I’m not coding, you can find me </em>:</br>
+                    Exploring <span>hidden cafés</span> while watching videos of BTS,</br>
+                    Celebrating Friday night with fresh, cold <span>beer</span>,</br>
+                    Playing with my angelic, five-year-old <span>golden retriever</span>,</br>
+                    and I am an avid <span>traveler</span>! Feel free to ask me about my experiences!</br></p>
+            </div>
+        </section>
+
         <section class='contact' id='contact'>
-            <h3>Contact</h3>
-            <a href="mailto:yewon95@vt.edu"><img src='images/mail.png' alt="Email Logo"/></a>
-            <a href="https://github.com/yewon9524" target="_blank"><img src="images/GitHub-Mark-64px.png" alt="Github Logo"/></a>
-            <a href="https://www.linkedin.com/in/rainashin/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-            
-            <p>Frontend: HTML5, CSS3, JavaScript ES6, jQuery</p>
-            <p>Backend: </p>
+            <h2>CONTACT</h2>
+            <p>Let's create something great together!</p>
+            <a href="mailto:yewon95@vt.edu"><i class="fa fa-envelope"></i></a> 
+            <a href="https://github.com/yewon9524" target="_blank"><i class="fa fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/rainashin/" target="_blank"><i class="fa fa-linkedin"></i></a>
         </section>
 
         
