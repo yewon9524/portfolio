@@ -61,7 +61,7 @@
     width: 100%;
     position: absolute;
     text-align: center;
-    top: 35%;
+    top: 35vh;
     font-size: 28px;
     padding-right:4%;
     padding-left: 4%;
@@ -73,7 +73,7 @@
     position: absolute;
     text-align: center;
     letter-spacing: 2px;
-    top: 45%;
+    top: 47vh;
     font-size: 16px;
     line-height: 1.75;
     padding-right:4%;
@@ -277,7 +277,7 @@
   }
 
   /*************** ipad screen size ****************/
-  @media screen and (min-device-width : 760px) and (max-device-width : 1023px) {
+  @media screen and (min-width : 760px) and (max-width : 1023px) {
     div.nav a {
       padding: 8px 20px;
       font-size: 14px;
@@ -420,7 +420,7 @@
   
   }
 
-  @media screen and (min-device-width : 1024px) {
+  @media screen and (min-width : 1024px) {
     div.nav a {
       padding: 8px 18px;
       letter-spacing: 1.5px;
