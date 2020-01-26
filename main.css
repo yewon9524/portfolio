@@ -47,7 +47,7 @@
   .hero-image {
     background-image: url('headline-img/yay.jpg');
     background-color: #cccccc;
-    height: 100vh;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,7 @@
     position: absolute;
     text-align: center;
     letter-spacing: 2px;
-    top: 47vh;
+    top: 50vh;
     font-size: 16px;
     line-height: 1.75;
     padding-right:4%;
@@ -91,7 +91,7 @@
   .aboutMe-img {
     background-image: url('headline-img/yay-peach.jpg');
     background-color: #cccccc;
-    height: 100vh;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,9 +99,6 @@
   }
 
   #aboutMe {
-    min-height: 100vh;
-    background-color: #D4E0DC;
-    
     color: dimgray;
   }
   #aboutMe h2 {
@@ -277,7 +274,7 @@
   }
 
   /*************** ipad screen size ****************/
-  @media screen and (min-width : 760px) and (max-width : 1023px) {
+  @media screen and (min-width : 760px) and (max-width : 1020px) {
     div.nav a {
       padding: 8px 20px;
       font-size: 14px;
@@ -293,12 +290,12 @@
     .headline-text h1 {
       letter-spacing: 4px;
       font-size: 40px;
-      
+      top: 35vh;
     }
   
     .headline-text p {
       letter-spacing: 2.5px;
-      top: 45%;
+      top: 55vh;
       font-size: 18px;
       line-height: 2;
       padding-right:5%;
@@ -307,11 +304,18 @@
     .headline-text p span {
       font-weight: bold;
     }
-  
+
+    .hero-image {
+      height: 1020px;
+    }
   
     /********************** sections ***********************/
     
     /****************** aboutMe pagee ****************/
+    .aboutMe-img {
+      height: 1020px;
+    }
+    
     #aboutMe h2 {
       font-size: 32px;
       margin-top: 0px;
@@ -420,7 +424,7 @@
   
   }
 
-  @media screen and (min-width : 1024px) {
+  @media screen and (min-width : 1021px) {
     div.nav a {
       padding: 8px 18px;
       letter-spacing: 1.5px;
@@ -488,7 +492,7 @@
       margin-top: 0px;
       padding-top: 10vh;
       letter-spacing: 4px;
-      margin-bottom: 2%;
+      margin-bottom: 4%;
     }
   
     .flexbox-container {
