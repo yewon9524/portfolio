@@ -149,7 +149,6 @@
 
   .flexbox-container {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
   }
   
@@ -204,40 +203,29 @@
   .project-sites {
     width: 100%;
     text-align: center;
-  }
-
-  .project-sites button {
-    border: 1px solid #ccc;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 1px 5px;
-    height: 30px;
-    width: 80px;
-    margin: 15px 0;
-    }
-
-  .project-sites button.repo:hover {
-    border: 1px solid #CCC;
-    background-color: #F2CCC8;
-    color: white;
-  }
-
-  .project-sites button.demo:hover {
-    border: 1px solid #CCC;
-    background-color: #D4E0DC;
+    margin:10px;
   }
 
   .project-sites a {
     text-decoration: none;
-    color: rgb(73, 69, 69);
-    font-size: 12px;
+    color: dimgray;
+    font-size: 14px;
     letter-spacing: 1px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 30px;
   }
 
-  .project-sites a:hover {
-    text-decoration: none;
+  .project-sites a.demo:hover {
+    background-color: #D4E0DC;
+    border: rgb(240, 230, 230) solid 1px;
   }
 
+  .project-sites a.repo:hover {
+    background-color: #F2CCC8;
+  }
 
 
   /******************** contact ********************/

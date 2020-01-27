@@ -10,7 +10,7 @@
 </head>
 <body >
     
-    <nav role="navigation">
+    <nav>
         <div class='nav'>
             <a href='#home' class='homeNav'>Home</a>
             <a href="#contact">Contact</a>
@@ -21,10 +21,10 @@
     </nav>
 
     
-    <header role="banner" id='home' >
+    <header id='home' >
         <div class='hero-image'>
             <div class='headline-text'>
-                <h1>Hello, I'm Raina!</h1> </br>
+                <h1>Hello, I'm Raina!</h1>
                 <p>I like solving problems</p>
                 <p id='p2'><br>using <span>code</span> and <span>design</span>.</p> 
             </div>
@@ -32,7 +32,7 @@
     </header>
        
 
-    <main role="main">
+    <main>
 
         <section class='portfolio' id='portfolio'>
             <h2>PORTFOLIO</h2>
@@ -41,7 +41,7 @@
                 <div class='card'>
                     <div class='project 1'>
                         <!-- video size: 960 x 720 -->
-                        <video class='myVideo' loop="loop" muted defaultMuted playsinline poster="images/quizapp.JPG">   
+                        <video class='myVideo' loop="loop" muted playsinline poster="images/quizapp.JPG">   
                             <source src="videos/quizapp.webm" type="video/webm">
                           </video>
                         <h3 class='quiz-app'>Quiz App</h3><p class='tech'>HTML5 &nbsp;CSS3 &nbsp;  JS &nbsp;  jQuery</p>
@@ -49,8 +49,9 @@
                         <p class='description'>A Quiz app to test your knowledge about Old MacDonald.</p>
                         
                         <div class='project-sites'>
-                            <button type='button' class='repo'><a href="https://github.com/yewon9524/quiz-app" target="_blank">CODE</a></button> |
-                            <button type='button' class='demo'><a href="https://yewon9524.github.io/quiz-app/" target="_blank">LIVE</a></button>
+                            <a  class='repo' href="https://github.com/yewon9524/quiz-app" target="_blank">CODE</a>
+                            <span>|</span>
+                            <a class='demo' href="https://yewon9524.github.io/quiz-app/" target="_blank">LIVE</a>
                         </div>
                     </div>
                 </div>
@@ -62,20 +63,14 @@
                             <source src="videos/bookmark.webm" type="video/webm">
                           </video>
                         <h3 class='bookmark-app'>Bookmarks App</h3><p class='tech'>HTML5 &nbsp;CSS3 &nbsp;  JS &nbsp;  jQuery</p>
-                
-                            <!-- <img src="images/HTML5.png" alt='html-logo'/>
-                            <img src='images/css3.png' alt='css=logo'/>
-                            <img src='images/jquery.png' alt='jquery-logo'>
-                            <img src='images/javascript-logo-black-and-white.png' alt='js-logo'/> -->
-                    </br>
-                        <p class='description'>A bookmarking application to store and rate custom web bookmark.
-                        </br >
-                        </p>
+ 
+                        <p class='description'>A bookmarking application to store and rate custom web bookmark.</p>
                         
 
                         <div class='project-sites'>
-                            <button type='button' class='repo'><a href="https://github.com/yewon9524/bookmarks-app" target="_blank">CODE</a></button> |
-                            <button type='button' class='demo'><a href="https://yewon9524.github.io/bookmarks-app/" target="_blank">LIVE</a></button>
+                            <a class='repo' href="https://github.com/yewon9524/bookmarks-app" target="_blank">CODE</a>
+                            <span>|</span>
+                            <a class='demo' href="https://yewon9524.github.io/bookmarks-app/" target="_blank">LIVE</a>
                         </div>
                     </div>
                </div> 
@@ -94,11 +89,11 @@
                 <p>To me, coding is not difficult, but rather, <span>challenging</span> because if I put in the time and efforts, I will see the  result. 
                     Every project and experience I encounter build me up to be a stronger developer ready to take on new challenges. I firmly believe that the skills, ideas, and creativity I have will <span>spark a large impact</span> on those around me.    </p>
 
-                <p><em>When I’m not coding, you can find me </em>:</br>
-                    Exploring <span>hidden cafés</span> while watching videos of BTS,</br>
-                    Celebrating Friday night with fresh, cold <span>beer</span>,</br>
-                    Playing with my angelic, five-year-old <span>golden retriever</span>,</br>
-                    and I am an avid <span>traveler</span>! Feel free to ask me about my experiences!</br></p>
+                <p><em>When I’m not coding, you can find me </em>:<br>
+                    Exploring <span>hidden cafés</span> while watching videos of BTS,<br>
+                    Celebrating Friday night with fresh, cold <span>beer</span>,<br>
+                    Playing with my angelic, five-year-old <span>golden retriever</span>,<br>
+                    and I am an avid <span>traveler</span>! Feel free to ask me about my experiences!</p>
             </div>
         </section>
 
@@ -114,12 +109,12 @@
         
     </main>
 
-    <footer role="content-info" id='raina'>
+    <footer id='raina'>
         <p>&copy; RAINA SHIN 2020 <p></p>
     </footer>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
 
